@@ -224,7 +224,7 @@ const SpendingChart = () => {
   // Calculate total expense to compute percentage
   const totalExpense = data.reduce((acc, item) => acc + item.value, 0);
 
-  const COLORS = ['#FF8042', '#00C49F', '#FFBB28', '#0088FE', '#8884d8', '#ffc658'];
+  const COLORS = ['#FF8042', '#00C49F', '#8F0177', '#0088FE', '#8884d8', '#ffc658'];
 
   if (data.length === 0) return null;
 
