@@ -65,6 +65,8 @@ const AppReducer = (state, action) => {
 };
 
 const GlobalProvider = ({ children }) => {
+  // PASTE THIS LINE BELOW (Replace with YOUR Render Link)
+  axios.defaults.baseURL = 'https://expense-tracker-api-mnou.onrender.com'; 
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   async function getTransactions() {
